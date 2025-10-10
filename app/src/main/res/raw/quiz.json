@@ -1,0 +1,185 @@
+[
+  {
+    "question1" : "How many meals do you eat a day?",
+    "choices" : {
+      "2" : 0,
+      "3" : 0,
+      "4" : 0,
+      ">4" : 0
+    }
+  },
+  {
+    "question2" : "What do you do after you eat?",
+    "choices" : {
+      "Rest, lay down, sit down, be lazy" : 0,
+      "Exercise" : 0,
+      "Walk around" : 0,
+      "Eat more" : 0
+    }
+  },
+  {
+    "question3" : "What kinds of snacks are you snacking on?",
+    "choices" : {
+      "Sweets" : 0,
+      "Savory" : 0,
+      "Spicy" : 0,
+      "Salty" : 0
+    }
+  },
+  {
+    "question4" : "How often do you exercise?",
+    "choices" : {
+      "NEVER" : 0,
+      "Once in a while" : 0,
+      "EVERYDAy" : 0,
+      "Few times per week" : 0
+    }
+  },
+  {
+    "question5" : "What's your favorite fast food place?",
+    "choices" : {
+      "I don't eat fast food" : 0,
+      "McDonalds" : 0,
+      "Chipotle" : 0,
+      "All of them" : 0
+    }
+  },
+  {
+  "question6" : "How often do you go to all you can eats?",
+  "choices" : {
+    "Often" : 0,
+    "Never been there in my life" : 0,
+    "Once a month" : 0,
+    "Once in a while" : 0
+  }
+},
+  {
+    "question7" : "Who do you go to buffets with?",
+    "choices" : {
+      "Family" : 0,
+      "Friends" : 0,
+      "By myself" : 0,
+      "Never been" : 0
+    }
+  },
+  {
+    "question8" : "What types of meals do you enjoy?",
+    "choices" : {
+      "Nutritious" : 0,
+      "Meaty" : 0,
+      "Tasty" : 0,
+      "Balanced" : 0
+    }
+  },
+  {
+    "question9" : "What's your current body status?",
+    "choices" : {
+      "Bulking" : 0,
+      "Cutting" : 0,
+      "Maintaining" : 0,
+      "Idk I like to eat" : 0
+    }
+  },
+  {
+    "question10" : "How often do you have desserts?",
+    "choices" : {
+      "Everyday/Everytime after a meal" : 0,
+      "Never" : 0,
+      "Once in a while" : 0,
+      "Before meals (I'm too hungry to wait)" : 0
+    }
+  },
+  {
+    "question11" : "Who would you share your food with?",
+    "choices" : {
+      "Family" : 0,
+      "Friends" : 0,
+      "Everyone" : 0,
+      "No one" : 0
+    }
+  },
+  {
+    "question12" : "How do you feel after you eat?",
+    "choices" : {
+      "I can barely finish my meals" : 0,
+      "I'm hungry after I eat" : 0,
+      "I'm tired" : 0,
+      "I'm energetic" : 0
+    }
+  },
+  {
+    "question13" : "Which of these would you like to be stuck forever doing?",
+    "choices" : {
+      "Eating" : 0,
+      "Sleeping" : 0,
+      "Exercising" : 0,
+      "Studying" : 0
+    }
+  },
+  {
+    "question14" : "How active are you?",
+    "choices" : {
+      "I do a sport" : 0,
+      "I'm not active" : 0,
+      "I exercise" : 0,
+      "I walk" : 0
+    }
+  },
+  {
+    "question15" : "",
+    "choices" : {
+      "a" : 0,
+      "b" : 0,
+      "c" : 0,
+      "d" : 0
+    }
+  },
+  {
+    "question16" : "",
+    "choices" : {
+      "a" : 0,
+      "b" : 0,
+      "c" : 0,
+      "d" : 0
+    }
+  },
+  {
+    "question17" : "",
+    "choices" : {
+      "a" : 0,
+      "b" : 0,
+      "c" : 0,
+      "d" : 0
+    }
+  },
+  {
+    "question18" : "",
+    "choices" : {
+      "a" : 0,
+      "b" : 0,
+      "c" : 0,
+      "d" : 0
+    }
+  },
+  {
+    "question19" : "Which of the 7 sins do you connect with the most?",
+    "choices" : {
+      "Pride" : 0,
+      "Lust" : 0,
+      "Greed" : 0,
+      "Gluttony" : 0,
+      "Soth" : 0,
+      "Wrath" : 0,
+      "Envy" : 0
+    }
+  },
+  {
+    "question20" : "Are you fat?",
+    "choices" : {
+      "Yes" : 0,
+      "No" : 0,
+      "A bit" : 0,
+      "Maybe" : 0
+    }
+  }
+]
