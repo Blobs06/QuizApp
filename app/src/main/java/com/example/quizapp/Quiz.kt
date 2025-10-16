@@ -14,7 +14,8 @@ class Quiz (val questions: List<Question>) {
     // is the answer they selected correct?
 
     fun questionTracker(){
-
+        //after 1st go ++
+        //keep going till no ++
     }
 
 }
