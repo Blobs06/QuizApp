@@ -25,12 +25,13 @@ class MainActivity : AppCompatActivity() {
             })
 
         val gson = Gson()
-        val inputStream = resources.openRawResource(R.raw.pluslife)
+        val inputStream = resources.openRawResource(R.raw.quiz)
         val jsonString = inputStream.bufferedReader().use {
             //kotlin use lambda makes "it" the object use is called on
             //will close that resource when the block finishes
             it.readText()
         }
+        val test = gson.fromJson(jsonString, Quiz::class.java)
         //get name, height,weight --> calc bmi
     }
 }

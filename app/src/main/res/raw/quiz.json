@@ -1,6 +1,6 @@
 [
   {
-    "question1" : "How many meals do you eat a day?",
+    "question" : "How many meals do you eat a day?",
     "choices" : {
       "2" : 0,
       "3" : 0,
@@ -9,7 +9,7 @@
     }
   },
   {
-    "question2" : "What do you do after you eat?",
+    "question" : "What do you do after you eat?",
     "choices" : {
       "Rest, lay down, sit down, be lazy" : 0,
       "Exercise" : 0,
@@ -18,7 +18,7 @@
     }
   },
   {
-    "question3" : "What kinds of snacks are you snacking on?",
+    "question" : "What kinds of snacks are you snacking on?",
     "choices" : {
       "Sweets" : 0,
       "Savory" : 0,
@@ -27,7 +27,7 @@
     }
   },
   {
-    "question4" : "How often do you exercise?",
+    "question" : "How often do you exercise?",
     "choices" : {
       "NEVER" : 0,
       "Once in a while" : 0,
@@ -36,16 +36,16 @@
     }
   },
   {
-    "question5" : "How active are you?",
+    "question" : "How active are you?",
     "choices" : {
       "I do a sport" : 0,
-      "I'm not active" : 0,
+      "I’m not active" : 0,
       "I exercise" : 0,
       "I walk" : 0
     }
   },
   {
-  "question6" : "How often do you go to all you can eats?",
+  "question" : "How often do you go to all you can eats?",
   "choices" : {
     "Often" : 0,
     "Never been there in my life" : 0,
@@ -54,7 +54,7 @@
   }
 },
   {
-    "question7" : "Who do you go to buffets with?",
+    "question" : "Who do you go to buffets with?",
     "choices" : {
       "Family" : 0,
       "Friends" : 0,
@@ -63,7 +63,7 @@
     }
   },
   {
-    "question8" : "What types of meals do you enjoy?",
+    "question" : "What types of meals do you enjoy?",
     "choices" : {
       "Nutritious" : 0,
       "Meaty" : 0,
@@ -72,7 +72,7 @@
     }
   },
   {
-    "question9" : "What's your current body status?",
+    "question" : "What’s your current body status?",
     "choices" : {
       "Bulking" : 0,
       "Cutting" : 0,
@@ -81,16 +81,16 @@
     }
   },
   {
-    "question10" : "How often do you have desserts?",
+    "question" : "How often do you have desserts?",
     "choices" : {
       "Everyday/Everytime after a meal" : 0,
       "Never" : 0,
       "Once in a while" : 0,
-      "Before meals (I'm too hungry to wait)" : 0
+      "Before meals (I’m too hungry to wait)" : 0
     }
   },
   {
-    "question11" : "Who would you share your food with?",
+    "question" : "Who would you share your food with?",
     "choices" : {
       "Family" : 0,
       "Friends" : 0,
@@ -99,16 +99,16 @@
     }
   },
   {
-    "question12" : "How do you feel after you eat?",
+    "question" : "How do you feel after you eat?",
     "choices" : {
       "I can barely finish my meals" : 0,
-      "I'm hungry after I eat" : 0,
-      "I'm tired" : 0,
-      "I'm energetic" : 0
+      "I’m hungry after I eat" : 0,
+      "I’m tired" : 0,
+      "I’m energetic" : 0
     }
   },
   {
-    "question13" : "Which of these would you like to be stuck forever doing?",
+    "question" : "Which of these would you like to be stuck forever doing?",
     "choices" : {
       "Eating" : 0,
       "Sleeping" : 0,
@@ -117,8 +117,8 @@
     }
   },
   {
-    "question14" : "How do you sit after eating too much?",
-  "choices" : {
+    "question" : "How do you sit after eating too much?",
+    "choices" : {
     "Leaning back like the king that I am" : 0,
     "Hands on stomach, breathing heavy" : 0,
     "Regretting life choices" : 0,
@@ -126,16 +126,16 @@
     }
   },
   {
-    "question15" : "How do you feel when someone takes your food?",
+    "question" : "How do you feel when someone takes your food?",
     "choices" : {
-      "I don't care" : 0,
+      "I don’t care" : 0,
       "They will die." : 0,
       "Depends on the food" : 0,
-      "I'll share it" : 0
+      "I’ll share it" : 0
     }
   },
   {
-    "question16" : "You drop food on the floor. What do you do?",
+    "question" : "You drop food on the floor. What do you do?",
     "choices" : {
       "5-seconds rule" : 0,
       "Trash it" : 0,
@@ -144,7 +144,7 @@
     }
   },
   {
-    "question17" : "How far would you travel for good food?",
+    "question" : "How far would you travel for good food?",
     "choices" : {
     "30 minutes " : 0,
     "Over an hour " : 0,
@@ -153,16 +153,16 @@
     }
   },
   {
-    "question18" : "What do you do when you hear ‘free food’?",
+    "question" : "What do you do when you hear ‘free food’?",
     "choices" : {
-    "No, that's suspicious" : 0,
+    "No, that’s suspicious" : 0,
     "Take it all" : 0,
     "Ask what it is first" : 0,
     "Politely decline" : 0
     }
   },
   {
-    "question19" : "Which of the 7 sins do you connect with the most?",
+    "question" : "Which of the 7 sins do you connect with the most?",
     "choices" : {
       "Pride" : 0,
       "Lust" : 0,
@@ -174,7 +174,7 @@
     }
   },
   {
-    "question20" : "Are you fat?",
+    "question" : "Are you fat?",
     "choices" : {
       "Yes" : 0,
       "No" : 0,
