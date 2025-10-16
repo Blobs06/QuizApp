@@ -43,8 +43,14 @@ class MainActivity : AppCompatActivity() {
         val questions = gson.fromJson<List<Question>>(jsonString, type)
         //get name, height,weight --> calc bmi
         Log.d(TAG, "onCreate: $questions")
-        var score = 0
         var quiz = Quiz(questions)
+
+
+        // listener
+        // assign points based on what they chose
+        // are there more questions?
+        // if so, get the next one and set up the buttons
+        // if not, game over screen
     }
 
     private fun wireWidgets(){
