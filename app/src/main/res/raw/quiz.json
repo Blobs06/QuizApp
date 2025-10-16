@@ -162,15 +162,12 @@
     }
   },
   {
-    "question" : "Which of the 7 sins do you connect with the most?",
+    "question" : "Which of these 4 sins do you connect with the most?",
     "choices" : {
       "Pride" : 0,
-      "Lust" : 0,
       "Greed" : 0,
       "Gluttony" : 0,
-      "Soth" : 0,
-      "Wrath" : 0,
-      "Envy" : 0
+      "Soth" : 0
     }
   },
   {
