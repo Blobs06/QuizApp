@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         }
         wireWidgets()
         displayQuestion()
+        buttonAnswerIdk()
 
 
         val gson = Gson()
@@ -63,7 +64,45 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayQuestion() {
+        val currentQuestion = quiz.getCurrentQuestion()
+        
+        questionText.text = "${quiz.getCurrentQuestionNumber()} / ${quiz.getTotalQuestions()}\n\n${currentQuestion.question}"
+        currentChoices = currentQuestion.choices.toList()
+        
+        option1.text = currentChoices[0].first
+        option2.text = currentChoices[1].first
+        option3.text = currentChoices[2].first
+        option4.text = currentChoices[3].first
+    }
 
+    private fun buttonAnswerIdk() {
+        option1.setOnClickListener { scoreAnswer(0) }
+        option2.setOnClickListener { scoreAnswer(1) }
+        option3.setOnClickListener { scoreAnswer(2) }
+        option4.setOnClickListener { scoreAnswer(3) }
+    }
+
+    private fun scoreAnswer(choiceIndex: Int) {
+        //points for choice
+        val points = currentChoices[choiceIndex].second
+        quiz.addPoints(points)
+        
+        //more questions?
+        if (quiz.hasMoreQuestions()) {
+            quiz.nextQuestion()
+            displayQuestion()
+        } else {
+            finalScore()
+        }
+    }
+
+    private fun finalScore() {
+        questionText.text = "${getString(R.string.quiz_complete)}\n\n${getString(R.string.your_score)} ${quiz.score}"
+        
+        option1.visibility = View.GONE
+        option2.visibility = View.GONE
+        option3.visibility = View.GONE
+        option4.visibility = View.GONE
     }
     
 }
