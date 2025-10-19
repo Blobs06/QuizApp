@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         wireWidgets()
+        displayQuestion()
 
 
         val gson = Gson()
@@ -60,4 +61,9 @@ class MainActivity : AppCompatActivity() {
         option3=findViewById(R.id.optionC)
         option4=findViewById(R.id.optionD)
     }
+
+    private fun displayQuestion() {
+
+    }
+    
 }
