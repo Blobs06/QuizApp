@@ -16,11 +16,13 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var questions:TextView
+    private lateinit var questionText:TextView
     private lateinit var option1: Button
     private lateinit var option2: Button
     private lateinit var option3: Button
     private lateinit var option4: Button
+    private lateinit var quiz: Quiz
+    private lateinit var currentChoices: List<Pair<String, Int>>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +34,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         wireWidgets()
-        displayQuestion()
-        buttonAnswerIdk()
-
 
         val gson = Gson()
         val inputStream = resources.openRawResource(R.raw.quiz)
@@ -45,7 +44,9 @@ class MainActivity : AppCompatActivity() {
         val questions = gson.fromJson<List<Question>>(jsonString, type)
         //get name, height,weight --> calc bmi
         Log.d(TAG, "onCreate: $questions")
-        var quiz = Quiz(questions)
+        quiz = Quiz(questions)
+        displayQuestion()
+        buttonAnswerIdk()
 
 
         // listener
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun wireWidgets(){
-        questions=findViewById(R.id.questions)
+        questionText=findViewById(R.id.questions)
         option1=findViewById(R.id.optionA)
         option2=findViewById(R.id.optionB)
         option3=findViewById(R.id.optionC)
@@ -65,10 +66,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun displayQuestion() {
         val currentQuestion = quiz.getCurrentQuestion()
-        
+
         questionText.text = "${quiz.getCurrentQuestionNumber()} / ${quiz.getTotalQuestions()}\n\n${currentQuestion.question}"
         currentChoices = currentQuestion.choices.toList()
-        
+
         option1.text = currentChoices[0].first
         option2.text = currentChoices[1].first
         option3.text = currentChoices[2].first
@@ -86,7 +87,7 @@ class MainActivity : AppCompatActivity() {
         //points for choice
         val points = currentChoices[choiceIndex].second
         quiz.addPoints(points)
-        
+
         //more questions?
         if (quiz.hasMoreQuestions()) {
             quiz.nextQuestion()
@@ -97,8 +98,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun finalScore() {
-        questionText.text = "${getString(R.string.quiz_complete)}\n\n${getString(R.string.your_score)} ${quiz.score}"
-        
+        questionText.text = "${getString(R.string.quiz_complete)}\n\n${quiz.score}"
+
         option1.visibility = View.GONE
         option2.visibility = View.GONE
         option3.visibility = View.GONE

@@ -45,14 +45,14 @@
     }
   },
   {
-  "question" : "How often do you go to all you can eats?",
-  "choices" : {
-    "Often" : 5,
-    "Never been there in my life" : 2,
-    "Once a month" : 5,
-    "Once in a while" : 1
-  }
-},
+    "question" : "How often do you go to all you can eats?",
+    "choices" : {
+      "Often" : 5,
+      "Never been there in my life" : 2,
+      "Once a month" : 5,
+      "Once in a while" : 1
+    }
+  },
   {
     "question" : "Who do you go to buffets with?",
     "choices" : {
@@ -119,10 +119,10 @@
   {
     "question" : "How do you sit after eating too much?",
     "choices" : {
-    "Leaning back like the king that I am" : 5,
-    "Hands on stomach, breathing heavy" : 5,
-    "Regretting life choices" : 1,
-    "Still reaching for dessert" : 5
+      "Leaning back like the king that I am" : 5,
+      "Hands on stomach, breathing heavy" : 5,
+      "Regretting life choices" : 1,
+      "Still reaching for dessert" : 5
     }
   },
   {
@@ -146,19 +146,19 @@
   {
     "question" : "How far would you travel for good food?",
     "choices" : {
-    "30 minutes " : 1,
-    "Over an hour " : 5,
-    "Different city" : 3,
-    "Only within 5 mins" : 0
+      "30 minutes " : 1,
+      "Over an hour " : 5,
+      "Different city" : 3,
+      "Only within 5 mins" : 0
     }
   },
   {
     "question" : "What do you do when you hear ‘free food’?",
     "choices" : {
-    "No, that’s suspicious" : 0,
-    "Take it all" : 5,
-    "Ask what it is first" : 1,
-    "Politely decline" : 2
+      "No, that’s suspicious" : 0,
+      "Take it all" : 5,
+      "Ask what it is first" : 1,
+      "Politely decline" : 2
     }
   },
   {

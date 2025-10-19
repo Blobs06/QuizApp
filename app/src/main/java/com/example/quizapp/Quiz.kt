@@ -10,6 +10,7 @@ class Quiz (val questions: List<Question>) {
         return currentQuestionIndex < questions.size - 1
         // since you are deleting the question from the list as we go, you can just see if it's empty or not
         // also we need to make the list Mutable
+        return true;
     }
     
     fun getCurrentQuestion(): Question {
