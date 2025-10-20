@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var textInputHeight: TextInputLayout
     private lateinit var textInputWeight: TextInputLayout
     private var bmiMultiplier: Double = 1.0
+    //aaaa
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
