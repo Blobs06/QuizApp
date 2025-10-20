@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Ứng dụng Câu đố</string>
+    <string name="next_question">Câu hỏi tiếp theo</string>
+    <string name="last_question">Quay lại</string>
+    <string name="quiz_complete">Hoàn thành Câu đố!</string>
+    <string name="your_score">Điểm của bạn:</string>
+    //bmi
+    <string name="underweight_message">%1$s, bạn cần ăn nhiều hơn!</string>
+    <string name="overweight_message">%1$s, bạn có thể đang thừa cân!</string>
+    <string name="healthy_message">Tuyệt vời, %1$s!</string>
 
-    <string name="next_question">asdf</string>
-    <string name="last_question">asdf</string>
-    <string name="app_name">asdf</string>
+    <string name="enter_name">Tên đi</string>
+    <string name="enter_height">Chiều cao (in)</string>
+    <string name="enter_weight">Cân nặng (pao)</string>
+
 </resources>

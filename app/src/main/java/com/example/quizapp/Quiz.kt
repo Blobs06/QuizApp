@@ -2,7 +2,7 @@ package com.example.quizapp
 
 class Quiz (val questions: List<Question>) {
     var currentQuestionIndex = 0
-    var score = 0
+    var score = 0.0
 
     // these are the questions that we need methods to answer
     // are there more questions?
@@ -28,7 +28,7 @@ class Quiz (val questions: List<Question>) {
         return questions.size
     }
     
-    fun addPoints(points: Int) {
+    fun addPoints(points: Double) {
         score += points
     }
     
