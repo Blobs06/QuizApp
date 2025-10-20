@@ -53,9 +53,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun quizLoad(){
-        val locale = resources.configuration.locales.get(0).language
         val quizFile =
-            if (locale == "vi")
+            if (resources.configuration.locales.get(0).language == "vi")
                 R.raw.quiz_vi
             else
                 R.raw.quiz
