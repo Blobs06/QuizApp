@@ -175,8 +175,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun finalScore() {
         val name = textInputName.editText?.text.toString().trim()
-        val bmi = bmiMultiplier / 10
-        val finalAdjustedScore = (quiz.score + (bmi * 10)) / 10
+        val bmi = bmiMultiplier
+        val finalAdjustedScore = (quiz.score + (bmi) / 10)
         val bmiMessage = when {
             finalAdjustedScore < 18.5 -> getString(R.string.underweight_message, name)
             finalAdjustedScore > 25 -> getString(R.string.overweight_message, name)

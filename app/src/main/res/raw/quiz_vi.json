@@ -1,0 +1,182 @@
+[
+  {
+    "question" : "Bạn ăn bao nhiêu bữa một ngày?",
+    "choices" : {
+      "2" : -2.0,
+      "3" : 0.0,
+      "4" : 1.0,
+      ">4" : 5.0
+    }
+  },
+  {
+    "question" : "Bạn làm gì sau khi ăn?",
+    "choices" : {
+      "Nghỉ ngơi, nằm xuống, ngồi xuống, lười biếng": 1,
+      "Tập thể dục": 2.0,
+      "Đi dạo": 0.0,
+      "Vòng 2": 5.0
+    }
+  },
+  {
+    "question" : "Bạn đang ăn vặt những loại đồ ăn vặt nào?",
+    "choices" : {
+      "Món ngọt": 5.0,
+      "Món mặn": 0.0,
+      "Món cay": 0.0,
+      "Món chua": 0.0
+    }
+  },
+  {
+    "question" : "Bạn tập thể dục thường xuyên như thế nào?",
+    "choices" : {
+      "KHÔNG LÀM": 5.0,
+      "Thỉnh thoảng": 0.0,
+      "MỌI NGÀY": 2.0,
+      "Vài lần mỗi tuần": -2.0
+    }
+  },
+  {
+    "question" : "Bạn năng động thế nào?",
+    "choices" : {
+      "Tôi chơi thể thao": -4.0,
+      "Tôi không năng động": 3.0,
+      "Tôi tập thể dục": 0.0,
+      "đi bộ": 1.0
+    }
+  },
+  {
+    "question" : "Bạn thường xuyên đi ăn thả ga ở những nơi như thế nào?",
+    "choices" : {
+      "Thường xuyên": 5.0,
+      "Chưa bao giờ đến đó trong đời": 2.0,
+      "Mỗi tháng một lần": 5.0,
+      "Thỉnh thoảng": 1.0
+    }
+  },
+  {
+    "question" : "Bạn đi ăn buffet với ai?",
+    "choices" : {
+      "Gia đình": 0.0,
+      "Bạn bè": 0.0,
+      "Một mình": 5.0,
+      "Chưa từng đến": 2.0
+    }
+  },
+  {
+    "question" : "Bạn thích những loại bữa ăn nào?",
+    "choices" : {
+      "Bổ dưỡng": 1.0,
+      "Thịt": 1.0,
+      "Ngon miệng": 1.0,
+      "Cân bằng": 0.0
+    }
+  },
+  {
+    "question" : "Tình trạng cơ thể hiện tại của bạn thế nào?",
+    "choices" : {
+      "Tăng cơ": 3.0,
+      "Cắt giảm": 1.0,
+      "Duy trì": 0.0,
+      "Tôi không biết mình có thích ăn không": 5.0
+    }
+  },
+  {
+    "question" : "Bạn thường ăn món tráng miệng bao lâu một lần?",
+    "choices" : {
+      "Hàng ngày/Mỗi lần sau bữa ăn": 1.0,
+      "Không bao giờ": 2.0,
+      "Thỉnh thoảng": 0.0,
+      "Trước bữa ăn (Tôi quá đói để chờ)": 5.0
+    }
+  },
+  {
+    "question" : "Bạn sẽ chia sẻ đồ ăn của mình với ai?",
+    "choices" : {
+      "Gia đình": -2.0,
+      "Bạn bè": -2.0,
+      "Mọi người": -4.0,
+      "Không ai": 5.0
+    }
+  },
+  {
+    "question" : "Bạn cảm thấy thế nào sau khi ăn?",
+    "choices" : {
+      "Tôi gần như không thể ăn hết bữa": 2.0,
+      "Tôi đói sau khi ăn": 5.0,
+      "Tôi mệt": 3.0,
+      "Tôi tràn đầy năng lượng": -4.0
+    }
+  },
+  {
+    "question" : "Bạn muốn bị mắc kẹt mãi mãi với việc nào trong số này?",
+    "choices" : {
+      "Ăn": 5.0,
+      "Ngủ": 3.0,
+      "Tập thể dục": 2.0,
+      "Học tập": 0.0
+    }
+  },
+  {
+    "question" : "Bạn ngồi thế nào sau khi ăn quá nhiều?",
+    "choices" : {
+      "Ngả người ra sau như một vị vua": 5.0,
+      "Đặt tay lên bụng, thở hổn hển": 5.0,
+      "Hối hận về những lựa chọn trong cuộc sống": 1.0,
+      "Vẫn đang với tay lấy món tráng miệng": 5.0
+    }
+  },
+  {
+    "question" : "Bạn cảm thấy thế nào khi ai đó lấy mất đồ ăn của bạn?",
+    "choices" : {
+      "Tôi không quan tâm": 2.0,
+      "Họ sẽ chết.": 5.0,
+      "Tùy thuộc vào thức ăn": 0.0,
+      "Tôi sẽ chia sẻ": -5.0
+    }
+  },
+  {
+    "question" : "Bạn làm rơi thức ăn xuống sàn. Bạn sẽ làm gì?",
+    "choices" : {
+      "Quy tắc 5 giây": 5.0,
+      "Vứt bỏ": -10.0,
+      "Tùy thuộc vào nó là gì": 0.0,
+      "Ai quan tâm đồ ăn vẫn là đồ ăn": 10.0
+    }
+  },
+  {
+    "question" : "Bạn có thể đi xa đến mức nào để có được đồ ăn ngon?",
+    "choices" : {
+      "30 phút": 1.0,
+      "Hơn một giờ": 5.0,
+      "Khác thành phố": 3.0,
+      "Chỉ trong vòng 5 phút": 0.0
+    }
+  },
+  {
+    "question" : "Bạn sẽ làm gì khi nghe đến 'đồ ăn miễn phí'?",
+    "choices" : {
+      "Không, điều đó thật đáng ngờ": 0.0,
+      "Lấy hết đi": 5.0,
+      "Hỏi xem đó là gì trước": 1.0,
+      "Từ chối lịch sự": 2.0
+    }
+  },
+  {
+    "question" : "Trong 4 tội lỗi này, bạn liên tưởng đến tội lỗi nào nhiều nhất?",
+    "choices" : {
+      "Kiêu ngạo": 1.0,
+      "Tham lam": 5.0,
+      "Tham ăn": 10.0,
+      "Lười biếng": 3.0
+    }
+  },
+  {
+    "question" : "Bạn có mập không?",
+    "choices" : {
+      "Có": 10.0,
+      "Không": 2.0,
+      "Một chút": 3.0,
+      "Có thể": 3.0
+    }
+  }
+]
