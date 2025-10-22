@@ -1,0 +1,182 @@
+[
+  {
+    "question": "Bạn ăn bao nhiêu bữa một ngày?",
+    "choices": {
+      "2": -2.0,
+      "3": 0.0,
+      "4": 1.0,
+      ">4": 5.0
+    }
+  },
+  {
+    "question": "Bạn làm gì sau khi ăn?",
+    "choices": {
+      "Nghỉ ngơi, nằm hoặc ngồi lười": 1,
+      "Tập thể dục": 2.0,
+      "Đi dạo": 0.0,
+      "Ăn tiếp lần 2": 5.0
+    }
+  },
+  {
+    "question": "Bạn đang ăn loại đồ ăn vặt nào?",
+    "choices": {
+      "Ngọt": 5.0,
+      "Mặn": 0.0,
+      "Cay": 0.0,
+      "Mặn ngọt": 0.0
+    }
+  },
+  {
+    "question": "Bạn tập thể dục bao thường xuyên?",
+    "choices": {
+      "KHÔNG BAO GIỜ": 5.0,
+      "Thỉnh thoảng": 0.0,
+      "HÀNG NGÀY": 2.0,
+      "Vài lần mỗi tuần": -2.0
+    }
+  },
+  {
+    "question": "Bạn hoạt động thể chất như thế nào?",
+    "choices": {
+      "Tôi chơi thể thao": -4.0,
+      "Tôi không năng động": 3.0,
+      "Tôi tập thể dục": 0.0,
+      "Tôi đi bộ": 1.0
+    }
+  },
+  {
+    "question": "Bạn đi buffet bao thường xuyên?",
+    "choices": {
+      "Thường xuyên": 5.0,
+      "Chưa từng đi": 2.0,
+      "Một lần mỗi tháng": 5.0,
+      "Thỉnh thoảng": 1.0
+    }
+  },
+  {
+    "question": "Bạn đi buffet với ai?",
+    "choices": {
+      "Gia đình": 0.0,
+      "Bạn bè": 0.0,
+      "Một mình": 5.0,
+      "Chưa từng đi": 2.0
+    }
+  },
+  {
+    "question": "Bạn thích loại bữa ăn nào?",
+    "choices": {
+      "Bổ dưỡng": 1.0,
+      "Nhiều thịt": 1.0,
+      "Ngon miệng": 1.0,
+      "Cân bằng": 0.0
+    }
+  },
+  {
+    "question": "Hiện trạng cơ thể của bạn là gì?",
+    "choices": {
+      "Tăng cơ": 3.0,
+      "Giảm cân": 1.0,
+      "Duy trì": 0.0,
+      "Tôi thích ăn": 5.0
+    }
+  },
+  {
+    "question": "Bạn ăn tráng miệng bao thường xuyên?",
+    "choices": {
+      "Hàng ngày/sau mỗi bữa": 1.0,
+      "Không bao giờ": 2.0,
+      "Thỉnh thoảng": 0.0,
+      "Trước bữa ăn (quá đói không chờ nổi)": 5.0
+    }
+  },
+  {
+    "question": "Bạn sẽ chia thức ăn với ai?",
+    "choices": {
+      "Gia đình": -2.0,
+      "Bạn bè": -2.0,
+      "Mọi người": -4.0,
+      "Không chia với ai": 5.0
+    }
+  },
+  {
+    "question": "Bạn cảm thấy thế nào sau khi ăn?",
+    "choices": {
+      "Tôi hầu như không ăn hết": 2.0,
+      "Tôi vẫn đói sau khi ăn": 5.0,
+      "Tôi mệt": 3.0,
+      "Tôi tràn đầy năng lượng": -4.0
+    }
+  },
+  {
+    "question": "Bạn muốn bị mắc kẹt mãi mãi làm việc nào dưới đây?",
+    "choices": {
+      "Ăn": 5.0,
+      "Ngủ": 3.0,
+      "Tập thể dục": 2.0,
+      "Học": 0.0
+    }
+  },
+  {
+    "question": "Bạn ngồi như thế nào sau khi ăn quá nhiều?",
+    "choices": {
+      "Ngả ra như một vị vua": 5.0,
+      "Đặt tay lên bụng, thở nặng nhọc": 5.0,
+      "Hối hận về quyết định": 1.0,
+      "Vẫn tiếp tục ăn tráng miệng": 5.0
+    }
+  },
+  {
+    "question": "Bạn cảm thấy thế nào khi ai đó lấy thức ăn của bạn?",
+    "choices": {
+      "Tôi không quan tâm": 2.0,
+      "Họ sẽ chết": 5.0,
+      "Tùy loại thức ăn": 0.0,
+      "Tôi sẽ chia": -5.0
+    }
+  },
+  {
+    "question": "Bạn làm gì khi thức ăn rơi xuống sàn?",
+    "choices": {
+      "Quy tắc 5 giây": 5.0,
+      "Vứt đi": -10.0,
+      "Tùy loại thức ăn": 0.0,
+      "Thức ăn là thức ăn, ai quan tâm": 10.0
+    }
+  },
+  {
+    "question": "Bạn sẽ đi bao xa để có thức ăn ngon?",
+    "choices": {
+      "30 phút": 1.0,
+      "Hơn một giờ": 5.0,
+      "Đến thành phố khác": 3.0,
+      "Chỉ trong 5 phút": 0.0
+    }
+  },
+  {
+    "question": "Bạn làm gì khi nghe 'thức ăn miễn phí'?",
+    "choices": {
+      "Không, nghi ngờ": 0.0,
+      "Lấy hết": 5.0,
+      "Hỏi trước xem là gì": 1.0,
+      "Từ chối lịch sự": 2.0
+    }
+  },
+  {
+    "question": "Trong 4 tội lỗi này, bạn cảm thấy liên quan đến tội nào nhất?",
+    "choices": {
+      "Kiêu căng": 1.0,
+      "Tham lam": 5.0,
+      "Tham ăn": 10.0,
+      "Lười biếng": 3.0
+    }
+  },
+  {
+    "question": "Bạn có béo không?",
+    "choices": {
+      "Có": 10.0,
+      "Không": 2.0,
+      "Hơi một chút": 3.0,
+      "Có thể": 3.0
+    }
+  }
+]

@@ -90,7 +90,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun optionsSee(){
-
+        option1.visibility = View.VISIBLE
+        option2.visibility = View.VISIBLE
+        option3.visibility = View.VISIBLE
+        option4.visibility = View.VISIBLE
     }
 
     private fun optionsNoSee(){
@@ -106,6 +109,8 @@ class MainActivity : AppCompatActivity() {
         textInputHeight.visibility = View.VISIBLE
         textInputWeight.visibility = View.VISIBLE
         restart.visibility = View.INVISIBLE
+
+        next.text = getString(R.string.start_quiz)
 
         next.setOnClickListener{
             val nameText = textInputName.editText?.text.toString().trim()
@@ -156,10 +161,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun displayQuestion() {
         questionText.visibility = View.VISIBLE
-        option1.visibility = View.VISIBLE
-        option2.visibility = View.VISIBLE
-        option3.visibility = View.VISIBLE
-        option4.visibility = View.VISIBLE
+        optionsSee()
         val currentQuestion = quiz.getCurrentQuestion()
 
         questionText.text = "${quiz.getCurrentQuestionNumber()} / ${quiz.getTotalQuestions()}\n\n${currentQuestion.question}"
