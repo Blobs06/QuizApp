@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         textInputName=findViewById(R.id.textInputName)
         textInputHeight=findViewById(R.id.textInputHeight)
         textInputWeight=findViewById(R.id.textInputWeight)
-    }//hihi idk why its not commiting
+    }//why arent you commiting
 
     private fun quizLoad(){
         val locale = resources.configuration.locales.get(0).language
