@@ -5,11 +5,14 @@
     <string name="quiz_complete">Quiz Complete!</string>
     <string name="your_score">Your Score:</string>
     //bmi
-    <string name="underweight_message">%1$s, you need to eat more!</string>
-    <string name="overweight_message">%1$s, you might be overweight!</string>
+    <string name="underweight_message">Eat more %1$s!!</string>
+    <string name="overweight_message">%1$s, you are fat.</string>
     <string name="healthy_message">Wow look at you, %1$s!</string>
 
     <string name="enter_name">Name pls</string>
     <string name="enter_height">Height (inches)</string>
     <string name="enter_weight">Weight (pounds)</string>
+    <string name="name_empty">Enter your name</string>
+    <string name="height_empty">Enter your height</string>
+    <string name="weight_empty">Enter your weight</string>
 </resources>

@@ -3,7 +3,6 @@ package com.example.quizapp
 class Quiz (val questions: List<Question>) {
     var currentQuestionIndex = 0
     var score = 0.0
-
     // these are the questions that we need methods to answer
     // are there more questions?
     fun hasMoreQuestions() : Boolean {
@@ -12,7 +11,7 @@ class Quiz (val questions: List<Question>) {
         // also we need to make the list Mutable
         return true;
     }
-    
+
     fun getCurrentQuestion(): Question {
         return questions[currentQuestionIndex]
     }
@@ -27,15 +26,14 @@ class Quiz (val questions: List<Question>) {
     fun getTotalQuestions(): Int {
         return questions.size
     }
-    
+
     fun addPoints(points: Double) {
         score += points
     }
-    
+
     fun nextQuestion() {
         if (hasMoreQuestions()) {
             currentQuestionIndex++
         }
     }
-
 }

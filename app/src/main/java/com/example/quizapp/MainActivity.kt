@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var textInputWeight: TextInputLayout
     private var bmiEz: Double = 1.0
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -43,7 +42,6 @@ class MainActivity : AppCompatActivity() {
         }
         wireWidgets()
         quizLoad()
-
 
         // listener
         // assign points based on what they chose
@@ -60,18 +58,20 @@ class MainActivity : AppCompatActivity() {
         option4=findViewById(R.id.optionD)
         restart=findViewById(R.id.startQuizButton)
         next=findViewById(R.id.buttonNext)
-        textInputName = findViewById(R.id.textInputName)
-        textInputHeight = findViewById(R.id.textInputHeight)
-        textInputWeight = findViewById(R.id.textInputWeight)
+        textInputName=findViewById(R.id.textInputName)
+        textInputHeight=findViewById(R.id.textInputHeight)
+        textInputWeight=findViewById(R.id.textInputWeight)
     }
 
     private fun quizLoad(){
         val locale = resources.configuration.locales.get(0).language
         val quizFile =
-            if (locale == "vi")
+            if(locale == "vi"){
                 R.raw.quiz_vi
-            else
+            }
+            else{
                 R.raw.quiz
+            }
         val gson = Gson()
         val inputStream = resources.openRawResource(quizFile)
         val jsonString = inputStream.bufferedReader().use {
@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
         option4.visibility = View.INVISIBLE
     }
 
-    private fun startQuiz() {
+    private fun startQuiz(){
         next.visibility = View.VISIBLE
         textInputName.visibility = View.VISIBLE
         textInputHeight.visibility = View.VISIBLE
@@ -118,29 +118,30 @@ class MainActivity : AppCompatActivity() {
             val weightText = textInputWeight.editText?.text.toString().trim()
 
             //all filled
-            if (nameText.isEmpty() || heightText.isEmpty() || weightText.isEmpty()) {
+            if(nameText.isEmpty() || heightText.isEmpty() || weightText.isEmpty()){
                 //missing
-                if (nameText.isEmpty()){
-                    textInputName.error = "Please enter your name"
+                if(nameText.isEmpty()){
+                    textInputName.error = getString(R.string.name_empty)
                 }
                 else{
                     textInputName.error = null
                 }
-                if (heightText.isEmpty()){
-                    textInputHeight.error = "Please enter your height"
+
+                if(heightText.isEmpty()){
+                    textInputHeight.error = getString(R.string.height_empty)
                 }
                 else{
                     textInputHeight.error = null
                 }
-                if (weightText.isEmpty()){
-                    textInputWeight.error = "Please enter your weight"
+
+                if(weightText.isEmpty()){
+                    textInputWeight.error = getString(R.string.weight_empty)
                 }
                 else{
                     textInputWeight.error = null
                 }
                 return@setOnClickListener
             }
-
             //height and weight
             val heightInches = heightText.toDouble()
             val weightLbs = weightText.toDouble()
@@ -155,16 +156,14 @@ class MainActivity : AppCompatActivity() {
             displayQuestion()
             buttonAnswerIdk()
         }
-
-
     }
 
-    private fun displayQuestion() {
+    private fun displayQuestion(){
         questionText.visibility = View.VISIBLE
         optionsSee()
         val currentQuestion = quiz.getCurrentQuestion()
 
-        questionText.text = "${quiz.getCurrentQuestionNumber()} / ${quiz.getTotalQuestions()}\n\n${currentQuestion.question}"
+        questionText.text = "${quiz.getCurrentQuestionNumber()}/${quiz.getTotalQuestions()}\n\n${currentQuestion.question}"
         currentChoices = currentQuestion.choices.toList()
 
         option1.text = currentChoices[0].first
@@ -173,42 +172,51 @@ class MainActivity : AppCompatActivity() {
         option4.text = currentChoices[3].first
     }
 
-    private fun buttonAnswerIdk() {
-        option1.setOnClickListener { scoreAnswer(0) }
-        option2.setOnClickListener { scoreAnswer(1) }
-        option3.setOnClickListener { scoreAnswer(2) }
-        option4.setOnClickListener { scoreAnswer(3) }
+    private fun buttonAnswerIdk(){
+        option1.setOnClickListener{
+            scoreAnswer(0)
+        }
+        option2.setOnClickListener{
+            scoreAnswer(1)
+        }
+        option3.setOnClickListener{
+            scoreAnswer(2)
+        }
+        option4.setOnClickListener{
+            scoreAnswer(3)
+        }
     }
 
-    private fun scoreAnswer(choiceIndex: Int) {
+    private fun scoreAnswer(choiceIndex:Int){
         //points for choice
         val points = currentChoices[choiceIndex].second
         quiz.addPoints(points)
 
         //more questions?
-        if (quiz.hasMoreQuestions()) {
+        if(quiz.hasMoreQuestions()){
             quiz.nextQuestion()
             displayQuestion()
-        } else {
+        }
+        else{
             finalScore()
         }
     }
 
-    private fun finalScore() {
+    private fun finalScore(){
         val name = textInputName.editText?.text.toString().trim()
-        val finalAdScore = (quiz.score + bmiEz) / 10
-        val bmiMessage = when {
+        val finalAdScore = (quiz.score+bmiEz)/10
+        val bmiMessage = when{
             finalAdScore < 18.5 -> getString(R.string.underweight_message, name)
             finalAdScore > 25 -> getString(R.string.overweight_message, name)
             else -> getString(R.string.healthy_message, name)
         }
 
-        questionText.text = "${getString(R.string.quiz_complete)}\n\n" + "Score: ${"%.2f".format(finalAdScore)}\n" + bmiMessage
+        questionText.text = "${getString(R.string.quiz_complete)}\n\n"+"Score: ${"%.2f".format(finalAdScore)}\n"+bmiMessage
 
         optionsNoSee()
         restart.visibility = View.VISIBLE
         restart.text = getString(R.string.restart_quiz)
-        restart.setOnClickListener {
+        restart.setOnClickListener{
             quizLoad()
         }
     }

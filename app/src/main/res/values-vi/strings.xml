@@ -6,12 +6,14 @@
     <string name="quiz_complete">Hoàn thành Câu đố!</string>
     <string name="your_score">Điểm của bạn:</string>
     //bmi
-    <string name="underweight_message">%1$s, bạn cần ăn nhiều hơn!</string>
-    <string name="overweight_message">%1$s, bạn có thể đang thừa cân!</string>
+    <string name="underweight_message">Ăn nhiều hơn %1$s!!</string>
+    <string name="overweight_message">%1$s, bạn là mập.</string>
     <string name="healthy_message">Tuyệt vời, %1$s!</string>
 
     <string name="enter_name">Tên đi</string>
     <string name="enter_height">Chiều cao (in)</string>
     <string name="enter_weight">Cân nặng (pao)</string>
-
+    <string name="name_empty">Vui lòng nhập tên của bạn</string>
+    <string name="height_empty">Vui lòng nhập chiều cao của bạn</string>
+    <string name="weight_empty">Vui lòng nhập cân nặng của bạn</string>
 </resources>
