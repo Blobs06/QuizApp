@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ứng dụng Câu đố</string>
-    <string name="next_question">Câu hỏi tiếp theo</string>
-    <string name="last_question">Quay lại</string>
+    <string name="start_quiz">Bắt đầu</string>
+    <string name="restart_quiz">Chơi lại</string>
     <string name="quiz_complete">Hoàn thành Câu đố!</string>
     <string name="your_score">Điểm của bạn:</string>
     //bmi

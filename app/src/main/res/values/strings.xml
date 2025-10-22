@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Quiz App</string>
-    <string name="next_question">Next Question</string>
-    <string name="last_question">Go back</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="restart_quiz">Restart Quiz</string>
     <string name="quiz_complete">Quiz Complete!</string>
     <string name="your_score">Your Score:</string>
     //bmi

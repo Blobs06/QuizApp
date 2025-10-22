@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var textInputName: TextInputLayout
     private lateinit var textInputHeight: TextInputLayout
     private lateinit var textInputWeight: TextInputLayout
-    private var bmiMultiplier: Double = 1.0
+    private var bmiEz: Double = 1.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,6 +52,19 @@ class MainActivity : AppCompatActivity() {
         // if not, game over screen
     }
 
+    private fun wireWidgets(){
+        questionText=findViewById(R.id.questions)
+        option1=findViewById(R.id.optionA)
+        option2=findViewById(R.id.optionB)
+        option3=findViewById(R.id.optionC)
+        option4=findViewById(R.id.optionD)
+        restart=findViewById(R.id.startQuizButton)
+        next=findViewById(R.id.buttonNext)
+        textInputName = findViewById(R.id.textInputName)
+        textInputHeight = findViewById(R.id.textInputHeight)
+        textInputWeight = findViewById(R.id.textInputWeight)
+    }
+
     private fun quizLoad(){
         val locale = resources.configuration.locales.get(0).language
         val quizFile =
@@ -71,12 +84,20 @@ class MainActivity : AppCompatActivity() {
         quiz = Quiz(questions)
 
         questionText.visibility = View.INVISIBLE
+        optionsNoSee()
+        restart.visibility = View.INVISIBLE
+        startQuiz()
+    }
+
+    private fun optionsSee(){
+
+    }
+
+    private fun optionsNoSee(){
         option1.visibility = View.INVISIBLE
         option2.visibility = View.INVISIBLE
         option3.visibility = View.INVISIBLE
         option4.visibility = View.INVISIBLE
-        restart.visibility = View.INVISIBLE
-        startQuiz()
     }
 
     private fun startQuiz() {
@@ -94,23 +115,34 @@ class MainActivity : AppCompatActivity() {
             //all filled
             if (nameText.isEmpty() || heightText.isEmpty() || weightText.isEmpty()) {
                 //missing
-                if (nameText.isEmpty()) textInputName.error = "Please enter your name"
-                if (heightText.isEmpty()) textInputHeight.error = "Please enter your height"
-                if (weightText.isEmpty()) textInputWeight.error = "Please enter your weight"
+                if (nameText.isEmpty()){
+                    textInputName.error = "Please enter your name"
+                }
+                else{
+                    textInputName.error = null
+                }
+                if (heightText.isEmpty()){
+                    textInputHeight.error = "Please enter your height"
+                }
+                else{
+                    textInputHeight.error = null
+                }
+                if (weightText.isEmpty()){
+                    textInputWeight.error = "Please enter your weight"
+                }
+                else{
+                    textInputWeight.error = null
+                }
                 return@setOnClickListener
             }
-
-            textInputName.error = null
-            textInputHeight.error = null
-            textInputWeight.error = null
 
             //height and weight
             val heightInches = heightText.toDouble()
             val weightLbs = weightText.toDouble()
 
             val bmi = (weightLbs * 703) / (heightInches * heightInches)
-            bmiMultiplier = bmi * 10
-            Log.d("BMI", "BMI = $bmi, multiplier = $bmiMultiplier")
+            bmiEz = bmi * 10
+            Log.d("BMI", "BMI = $bmi, multiplier = $bmiEz")
             next.visibility = View.INVISIBLE
             textInputName.visibility = View.INVISIBLE
             textInputHeight.visibility = View.INVISIBLE
@@ -120,19 +152,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-    }
-
-    private fun wireWidgets(){
-        questionText=findViewById(R.id.questions)
-        option1=findViewById(R.id.optionA)
-        option2=findViewById(R.id.optionB)
-        option3=findViewById(R.id.optionC)
-        option4=findViewById(R.id.optionD)
-        restart=findViewById(R.id.startQuizButton)
-        next=findViewById(R.id.buttonNext)
-        textInputName = findViewById(R.id.textInputName)
-        textInputHeight = findViewById(R.id.textInputHeight)
-        textInputWeight = findViewById(R.id.textInputWeight)
     }
 
     private fun displayQuestion() {
@@ -175,22 +194,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun finalScore() {
         val name = textInputName.editText?.text.toString().trim()
-        val bmi = bmiMultiplier / 10
-        val finalAdjustedScore = (quiz.score + (bmi * 10)) / 10
+        val finalAdScore = (quiz.score + bmiEz) / 10
         val bmiMessage = when {
-            finalAdjustedScore < 18.5 -> getString(R.string.underweight_message, name)
-            finalAdjustedScore > 25 -> getString(R.string.overweight_message, name)
+            finalAdScore < 18.5 -> getString(R.string.underweight_message, name)
+            finalAdScore > 25 -> getString(R.string.overweight_message, name)
             else -> getString(R.string.healthy_message, name)
         }
 
-        questionText.text = "${getString(R.string.quiz_complete)}\n\n" +"Score: ${"%.2f".format(finalAdjustedScore)}\n" + bmiMessage
+        questionText.text = "${getString(R.string.quiz_complete)}\n\n" + "Score: ${"%.2f".format(finalAdScore)}\n" + bmiMessage
 
-        option1.visibility = View.GONE
-        option2.visibility = View.GONE
-        option3.visibility = View.GONE
-        option4.visibility = View.GONE
+        optionsNoSee()
         restart.visibility = View.VISIBLE
-        restart.text = "Restart Quiz"
+        restart.text = getString(R.string.restart_quiz)
         restart.setOnClickListener {
             quizLoad()
         }
